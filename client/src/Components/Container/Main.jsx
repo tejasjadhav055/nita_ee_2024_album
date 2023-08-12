@@ -13,7 +13,7 @@ const Main = () => {
   }])
  
   useEffect(() =>{
-    fetch("https://nita-ee-album.onrender.com/app/link").then(res=>{
+    fetch("https://nita-ee2024-album-backend.onrender.com/app/link").then(res=>{
       if(res.ok){
         return res.json();
       }

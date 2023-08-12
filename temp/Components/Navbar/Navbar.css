@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Baloo+Bhai+2&family=Dancing+Script&family=Edu+QLD+Beginner&display=swap');
+
+#navbar{
+    height: 3rem;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 10% 83% 7%;
+}
+
+#navbar__logo img{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 100%;
+    margin-top: .25rem;
+    margin-left: 1rem;
+}
+#navbar___name{
+    margin-top: .25rem;
+}
+#navbar___name h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+#navbar__upload{
+    font-size: 1.5rem;
+    margin-top: .2rem;
+    color: var(--secondary-color);
+}
+
+
+
+/* =====================MEDIA QUERIES (MEDIUM DEVICIES)================== */
+@media screen and (max-width: 1024px){
+    #navbar___name h1{
+        font-size: 1.5rem;
+    }
+    #navbar___name{
+        margin-top: .65rem;
+        margin-left: 1rem;
+    }
+}
+
+
+/* =====================MEDIA QUERIES (SMALL DEVICIES)================== */
+@media screen and (max-width: 600px){
+    #navbar___name{
+        margin-left: 2rem;
+    }
+    #navbar___name h1{
+        font-size: 1.3rem;
+    }
+    #navbar{
+        height: 2.5rem;
+    }
+    #navbar__logo img{
+        height: 2rem;
+    width: 2rem;
+    }
+    #navbar__upload{
+        font-size: 1.2rem;
+    }
+}

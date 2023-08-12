@@ -48,7 +48,7 @@ export default class Upload extends Component {
       link: this.state.link
     }
 
-    axios.post('https://nita-ee2024-album-backend.onrender.com/app/link',regestred)
+    axios.post('https://nita-ee-album.onrender.com/app/link',regestred)
     .then(res=>console.log(res.data))
 
     this.state({

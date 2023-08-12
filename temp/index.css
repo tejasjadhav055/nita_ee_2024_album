@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Edu+QLD+Beginner&display=swap');
+
+
+:root{
+  --primary-color: violet;
+  --primary-varient-color: pink;
+  --secondary-color: brown;
+  --secondary-varient-color: orange;
+  --light-color: rgb(156, 151, 151);
+  --white-color: rgb(241, 236, 236);
+}
+
+*{
+  margin: 0rem;
+  padding: 0rem;
+}
+body,html{
+  height: 100%;
+  width: 100%;
+}
+body{
+  font-family: 'Baloo Bhai 2', cursive;
+  background-color: var(--primary-varient-color);
+}
+a{
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+/* =====================MEDIA QUERIES (MEDIUM DEVICIES)================== */
+@media screen and (max-width: 1024px){
+
+}
+
+
+/* =====================MEDIA QUERIES (SMALL DEVICIES)================== */
+@media screen and (max-width: 600px){
+  
+}

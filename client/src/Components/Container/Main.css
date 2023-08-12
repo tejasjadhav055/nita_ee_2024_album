@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Dancing+Script&family=Edu+QLD+Beginner&display=swap');
+
+#main{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: var(--primary-varient-color);
+}
+#main__images{
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 95vh;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+#main__images::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  #main__images{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+#main__images__image{
+    display: flex;
+    flex-direction: column;
+    
+}
+#main__images__image{
+    background-color: var(--secondary-varient-color);
+    margin: .1rem;
+    border-radius: 1rem;
+}
+#main__images__image img{
+    max-height: 90vh;
+    padding: .7rem;
+}
+#main__images__image small{
+    padding-bottom: 1rem;
+    text-align: center;
+    font-family: 'Edu QLD Beginner', cursive;
+}
+#player{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+#player audio{
+    padding: 1rem;
+}
+#player__nextbtn{
+    font-size: 10rem;
+    color: var(--secondary-varient-color);
+}
+#player__nextbtn:hover{
+    cursor: pointer;
+    transition-duration: 500ms;
+    color: yellow;
+}
+
+/* =====================MEDIA QUERIES (MEDIUM DEVICIES)================== */
+@media screen and (max-width: 1024px){
+    
+    #main{
+        grid-template-columns: 100% 0%;
+    }
+    #main__images{
+        margin-right: 5rem;
+    }
+    #main__images__image small{
+        font-size: 1rem;
+    }
+    #main__player{
+        display: none;
+    }
+}
+
+
+/* =====================MEDIA QUERIES (SMALL DEVICIES)================== */
+@media screen and (max-width: 600px){
+    #main__images{
+        margin-right: 0rem;
+        margin-left: 0rem;
+    }
+    #main__images__image img{
+        padding: .2rem;
+    }
+    #main__images__image small{
+        font-size: .7rem;
+        padding: .3rem;
+        padding-top: .1rem;
+    }
+    #main__images__image{
+        border-radius: .2rem;
+    }
+}
